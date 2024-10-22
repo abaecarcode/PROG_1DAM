@@ -12,5 +12,6 @@ public class HolaTeclado {
         edad = Teclado.LeeEntero();
 
         System.out.println("Hola " + nombre + " ,tienes  " + edad + " años");
+        System.out.println("Además eres " + nombre + ", te lo digo yo.");
     }
 }
