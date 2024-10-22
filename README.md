@@ -1,5 +1,6 @@
 # PROG_1DAM
-![Futuristic Programming](C:\Users\Twi\Desktop\IES ANTONIO GALA_2024_2025\1DAM\Programacion\PORTADAPROG.png)
+
+![PORTADAPROG](https://github.com/user-attachments/assets/6f20d42e-f645-4b0c-852c-d28d1d53cc91)
 
 Repositorio de proyectos y ejercicios de programación en Java para el módulo de Programación del primer curso de Desarrollo de Aplicaciones Multiplataforma (DAM). Aquí encontrarás ejemplos, prácticas y recursos que te ayudarán a aprender los fundamentos de la programación y avanzar hacia conceptos más avanzados en Java.
 
