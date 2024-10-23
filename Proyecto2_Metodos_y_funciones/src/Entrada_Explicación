@@ -1,0 +1,6 @@
+
+
+Entrada.entero() Lee un número entero por teclado y lo devuelve
+Entrada.real() Lee un número real por teclado y lo devuelve
+Entrada.cadena() Lee una cadena de caracteres y la devuelve
+Entrada.caracter() Lee un solo carácter por teclado y lo devuelve
