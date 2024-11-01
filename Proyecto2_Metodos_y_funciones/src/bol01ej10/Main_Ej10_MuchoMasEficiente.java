@@ -1,6 +1,7 @@
+package bol01ej10;
+
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.Scanner;
 
 public class Main_Ej10_MuchoMasEficiente {
     public static void main(String[] args) {
