@@ -1,3 +1,5 @@
+package bol01ej10;
+
 import java.util.Scanner;
 
 public class Main_Ej10_MasEficiente {
