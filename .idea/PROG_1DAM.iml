@@ -3,8 +3,16 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/Proyecto1_Iniciacion_JAVA/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Proyecto2_Metodos_y_funciones/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Boletin1_Variables_y_condicionales" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Boletin2_bucles_y_condicionales" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Boletin3_BuclesAnidados" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Boletin4_Tablas" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Boletin5_TablasNDimensionales" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Boletin6_Funciones" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/U1_Iniciacion_JAVA/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/U2_Metodos_y_funciones" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/U2_Metodos_y_funciones/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/U3_Arrays_y_Matrices" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
