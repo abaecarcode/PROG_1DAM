@@ -10,9 +10,9 @@
       <sourceFolder url="file://$MODULE_DIR$/Boletin5_TablasNDimensionales" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Boletin6_Funciones" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/U1_Iniciacion_JAVA/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/U2_Metodos_y_funciones" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/U2_Metodos_y_funciones/src" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/U3_Arrays_y_Matrices" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/U2_Arrays_y_Matrices" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/U3_Metodos_y_funciones" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/U3_Metodos_y_funciones/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
