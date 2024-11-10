@@ -97,8 +97,7 @@ int resultado = Utilidades.sumar(5, 10);
 
 ### Ejemplos Prácticos
 
-1. Método con Parámetros y Retorno
-Este método calcula el área de un rectángulo:
+1. Método con Parámetros y Retorno. Este método calcula el área de un rectángulo:
 
 ````java
 public double calcularAreaRectangulo(double ancho, double alto) {
@@ -106,16 +105,14 @@ public double calcularAreaRectangulo(double ancho, double alto) {
 }
 ````
 
-2. Método void sin Parámetros
-Este método imprime un mensaje de bienvenida:
+2. Método void sin Parámetros. Este método imprime un mensaje de bienvenida:
 
 ````java
 public void mostrarBienvenida() {
     System.out.println("¡Bienvenido al programa!");
 }
 ````
-3. Método static para Calcular el Factorial de un Número
-Este método calcula el factorial de un número entero:
+3. Método static para Calcular el Factorial de un Número. Este método calcula el factorial de un número entero:
 
 ````java
 public static int factorial(int n) {
@@ -131,6 +128,5 @@ public static int factorial(int n) {
 
 - Modularización: Los métodos permiten dividir el código en partes más pequeñas y reutilizables.
 - Modificadores de Acceso: Controlan la visibilidad de los métodos (public, private, protected).
--  static: Pertenecen a la clase y pueden llamarse sin instanciar objetos.
+- Métodos static: Pertenecen a la clase y pueden llamarse sin instanciar objetos.
 - Parámetros y Retorno: Los métodos pueden aceptar parámetros y devolver valores para ser más versátiles y útiles.
--  documento contiene la teoría fundamental para entender y trabajar con métodos en Java, junto con ejemplos claros que ayudarán a comprender el funcionamiento y la estructura de los métodos en la práctica.
