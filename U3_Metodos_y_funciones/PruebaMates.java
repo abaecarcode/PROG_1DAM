@@ -1,7 +1,8 @@
 import java.util.Scanner;
-import matematicas.Varias;
+import matematicas;
 
 public class PruebaMates {
+
     public static void main(String[] args) {
 
         //Prueba esPrimo()
