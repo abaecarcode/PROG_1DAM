@@ -11,7 +11,7 @@ public class Main_MultiploDeOtro {
         System.out.print("Introduce otro número: ");
         n2 = Entrada.entero();
 
-        if( n1 % n2==0)
+        if( n1 % n2 == 0 )
             System.out.println("Son múltiplos");
         else
             System.out.println("No son múltiplos");

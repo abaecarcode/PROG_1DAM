@@ -1,6 +1,8 @@
 /*2. Pedir el radio de un círculo y calcular su área. A=PI*r^2. */
 package bol01ej02;
 
+import static java.lang.Math.PI;
+
 public class Main {
     public static void main(String[] args) {
         double a, r; // Área y radio

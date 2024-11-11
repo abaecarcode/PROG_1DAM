@@ -1,3 +1,5 @@
+package Teoría;
+
 import javax.swing.*;
 
 public class JOptionPane_entrada_usuario {

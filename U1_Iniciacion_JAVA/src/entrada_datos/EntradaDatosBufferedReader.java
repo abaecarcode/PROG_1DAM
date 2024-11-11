@@ -10,15 +10,15 @@ public class EntradaDatosBufferedReader {
 
         //Creo las variables que voy a recoger
         String nombre;
-        int edad;
 
         try {
             // Leemos una cadena de texto por teclado
-            System.out.println("Introduce tu nombnre:");
+            System.out.println("Introduce tu nombre:");
             nombre = lector.readLine();
 
             System.out.println("Introduce tu edad:");
-            edad = Integer.parseInt(lector.readLine());
+            int edad = Integer.parseInt(lector.readLine());
+
 
             // Mostramos los datos capturados en el buffer
 

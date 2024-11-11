@@ -2,11 +2,11 @@
 
 ## Ejercicio 1
 Define un array de números enteros de 3 filas por 6 columnas con nombre `num` y asigna los valores según la siguiente tabla. Muestra el contenido de todos los elementos del array dispuestos en forma de tabla como se muestra en la figura.
-![img_4.png](img_4.png)
+![img_4.png](../imagenes/img_4.png)
 
 ## Ejercicio 2
 Escribe un programa que pida 20 números enteros. Estos números se deben introducir en un array de 4 filas por 5 columnas. El programa mostrará las sumas parciales de filas y columnas igual que si de una hoja de cálculo se tratara. La suma total debe aparecer en la esquina inferior derecha.
-![img_5.png](img_5.png)
+![img_5.png](../imagenes/img_5.png)
 
 ## Ejercicio 3
 Modifica el programa anterior de tal forma que los números que se introducen en el array se generen de forma aleatoria (valores entre 100 y 999).
@@ -25,7 +25,7 @@ Mejora el juego "Busca el tesoro" de tal forma que si hay una mina a una casilla
 
 ## Ejercicio 8
 Escribe un programa que, dada una posición en un tablero de ajedrez, nos diga a qué casillas podría saltar un alfil que se encuentra en esa posición. El alfil se mueve siempre en diagonal. El tablero cuenta con 64 casillas, donde las columnas se indican con las letras de la “a” a la “h” y las filas se indican del 1 al 8.
-![img_6.png](img_6.png)
+![img_6.png](../imagenes/img_6.png)
 
 Ejemplo:
 

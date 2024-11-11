@@ -1,3 +1,5 @@
+package Teoría;
+
 // Bucle POR - CADA. FOR - EACH
 public class ArrayForeach {
     public static void main(String[] args) {

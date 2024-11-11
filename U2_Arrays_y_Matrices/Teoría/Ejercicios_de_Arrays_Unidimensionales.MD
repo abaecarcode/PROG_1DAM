@@ -3,12 +3,12 @@
 ## Ejercicio 1
 
 Define un array de 12 números enteros con nombre `num` y asigna los valores según la tabla que se muestra a continuación. Muestra el contenido de todos los elementos del array. ¿Qué sucede con los valores de los elementos que no han sido inicializados?
-![img.png](img.png)
+![img.png](../imagenes/img.png)
 
 ## Ejercicio 2
 
 Define un array de 10 caracteres con nombre `simbolo` y asigna valores a los elementos según la tabla que se muestra a continuación. Muestra el contenido de todos los elementos del array. ¿Qué sucede con los valores de los elementos que no han sido inicializados?
-![img_1.png](img_1.png)
+![img_1.png](../imagenes/img_1.png)
 
 ## Ejercicio 3
 
@@ -45,13 +45,13 @@ Escribe un programa que genere 20 números enteros aleatorios entre 0 y 100 y qu
 ## Ejercicio 11
 
 Realiza un programa que pida 10 números por teclado y que los almacene en un array. A continuación se mostrará el contenido de ese array junto al índice(0 – 9) utilizando para ello una tabla. Seguidamente el programa pasará los primos a las primeras posiciones, desplazando el resto de números (los que no son primos) de tal forma que no se pierda ninguno. Al final se debe mostrar el array resultante.
-![img_2.png](img_2.png)
+![img_2.png](../imagenes/img_2.png)
 
 ## Ejercicio 12
 
 Realiza un programa que pida 10 números por teclado y que los almacene en un array. A continuación se mostrará el contenido de ese array junto al índice (0 – 9). Seguidamente el programa pedirá dos posiciones a las que llamaremos “inicial” y “final”. Se debe comprobar que inicial es menor que final y que ambos números están entre 0 y 9. El programa deberá colocar el número de la posición inicial en la posición final, rotando el resto de números para que no se pierda ninguno. Al final se debe mostrar el array resultante.
 Por ejemplo, para inicial = 3 y final = 7:
-![img_3.png](img_3.png)
+![img_3.png](../imagenes/img_3.png)
 
 ## Ejercicio 13
 
