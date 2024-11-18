@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import matematicas;
+import matematicas.Varias;
 
 public class PruebaMates {
 
