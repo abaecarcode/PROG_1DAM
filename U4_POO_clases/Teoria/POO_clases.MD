@@ -45,12 +45,12 @@ public class CuentaBancaria {
         this.saldo = saldoInicial;
     }
 
-    // Método público que permite consultar el saldo
+    // Metodo público que permite consultar el saldo
     public double consultarSaldo() {
         return saldo;
     }
 
-    // Método público para realizar depósitos en la cuenta
+    // Metodo público para realizar depósitos en la cuenta
     public void depositar(double cantidad) {
         if (cantidad > 0) {
             saldo += cantidad;
@@ -60,20 +60,20 @@ public class CuentaBancaria {
         }
     }
 
-    // Método protegido para mostrar los datos del titular
+    // Metodo protegido para mostrar los datos del titular
     // Solo accesible desde clases en el mismo paquete o subclases
     protected void mostrarTitular() {
         System.out.println("Titular de la cuenta: " + titular);
     }
 
-    // Método privado para calcular los intereses anuales
+    // Metodo privado para calcular los intereses anuales
     // Solo accesible dentro de esta clase
     private double calcularInteresAnual() {
         final double TASA_INTERES = 0.03; // Tasa de interés del 3%
         return saldo * TASA_INTERES;
     }
 
-    // Método público que muestra el interés anual usando el método privado
+    // Metodo público que muestra el interés anual usando el método privado
     public void mostrarInteresAnual() {
         double interes = calcularInteresAnual();
         System.out.println("Interés anual estimado: " + interes);
@@ -90,7 +90,7 @@ public class PruebaCuentaBancaria {
         System.out.println("Saldo inicial: " + miCuenta.consultarSaldo());
         miCuenta.depositar(500);
 
-        // Llamar al método para mostrar el interés anual
+        // Llamar al metodo para mostrar el interés anual
         miCuenta.mostrarInteresAnual();
 
         // Intento de acceso al método protegido
