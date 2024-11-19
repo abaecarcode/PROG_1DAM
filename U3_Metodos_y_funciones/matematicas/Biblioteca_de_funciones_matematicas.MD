@@ -1,6 +1,6 @@
 # Biblioteca de funciones matemáticas
 
-### **Ejercicio POO. Crea una biblioteca de funciones matemáticas que contenga las siguientes funciones. Recuerda que puedes usar unas dentro de otras si es necesario. Observa bien lo que hace cada función ya que, si las implementas en el orden adecuado, te puedes ahorrar mucho trabajo. Por ejemplo, la función siguientePrimo es muy fácil de implementar teniendo esPrimo.**
+### **Ejercicio de funciones. Crea una biblioteca de funciones matemáticas llamada Varias.java que contenga las siguientes funciones. Recuerda que puedes usar unas dentro de otras si es necesario. Observa bien lo que hace cada función ya que, si las implementas en el orden adecuado, te puedes ahorrar mucho trabajo. Por ejemplo, la función siguientePrimo es muy fácil de implementar teniendo esPrimo.**
 
 1. **esCapicua**: Devuelve verdadero si el número que se pasa como parámetro
       es capicúa y falso en caso contrario.

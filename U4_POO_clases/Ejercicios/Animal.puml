@@ -1,0 +1,29 @@
+@startuml
+abstract class Animal {
+    - nombre: String
+    - edad: int
+    --
+    + Animal(nombre: String, edad: int)
+    + getNombre(): String
+    + setNombre(nombre: String): void
+    + getEdad(): int
+    + setEdad(edad: int): void
+    + dormir(): void
+    # hacerSonido(): void
+}
+
+class Perro {
+    - raza: String
+    - entrenado: boolean
+    --
+    + Perro(nombre: String, edad: int, raza: String, entrenado: boolean)
+    + getRaza(): String
+    + setRaza(raza: String): void
+    + isEntrenado(): boolean
+    + setEntrenado(entrenado: boolean): void
+    + hacerSonido(): void
+    + ladrar(): void
+}
+
+Animal <|-- Perro
+@enduml
