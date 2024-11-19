@@ -93,7 +93,7 @@ public class PruebaCuentaBancaria {
         // Llamar al metodo para mostrar el interés anual
         miCuenta.mostrarInteresAnual();
 
-        // Intento de acceso al método protegido
+        // Intento de acceso al metodo protegido
         // miCuenta.mostrarTitular(); // Error: no se puede acceder directamente desde aquí
     }
 }
