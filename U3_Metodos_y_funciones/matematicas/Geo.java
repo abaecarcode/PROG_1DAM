@@ -2,10 +2,9 @@ package matematicas;
 
 /**
  * Funciones de geometría
- * @author Twi
  *
+ * @author Alejandro Torres
  */
-
 public class Geo {
     /**
      * Calcula el volumen de un cilindro.
@@ -19,6 +18,7 @@ public class Geo {
     public static double volumenCilindro(double r, double h) {
         return Math.PI * r * r * h;
     }
+
     /**
      * Calcula la longitud de una circunferencia a partir del radio.
      *
