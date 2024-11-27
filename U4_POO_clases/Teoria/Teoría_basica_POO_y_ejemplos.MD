@@ -95,15 +95,37 @@ La herencia permite que una clase (subclase) herede atributos y métodos de otra
 (Código de ejemplo: Herencia)
 ````java
 class Animal {
+    
+   // Metodo genérico para dormir
     void comer() {
         System.out.println("Este animal está comiendo.");
     }
+   // Metodo genérico para dormir
+   void dormir() {
+      System.out.println("El animal está durmiendo.");
+   }
 }
 
+// Subclase específica que extiende o hereda de la clase Animal
 class Perro extends Animal {
     void ladrar() {
         System.out.println("El perro está ladrando.");
     }
+}
+
+// Clase principal para probar la herencia
+public class HerenciaEjemplo {
+   public static void main(String[] args) {
+      // Crear un objeto de la clase Perro
+      Perro miPerro = new Perro();
+
+      // Usar métodos heredados de la clase Animal
+      miPerro.comer();
+      miPerro.dormir();
+
+      // Usar un método específico de la clase Perro
+      miPerro.ladrar();
+   }
 }
 ````
 ---
@@ -232,7 +254,7 @@ class Empleado {
         this.salarioBase = salarioBase;
     }
 
-    // Método polimórfico para calcular el salario
+    // Metodo polimórfico para calcular el salario
     public double calcularSalarioMensual() {
         return salarioBase;
     }

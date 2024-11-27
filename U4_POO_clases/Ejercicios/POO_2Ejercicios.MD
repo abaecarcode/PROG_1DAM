@@ -1,117 +1,123 @@
-# Relación de Ejercicios: Programación Orientada a Objetos en Java
+# Ejercicios de Programación Orientada a Objetos
 
-## **Ejercicio 1: Sistema de Gestión de Estudiantes**
-**Enunciado**:  
-Implementa la clase `Estudiante` con los siguientes atributos y métodos:
-- **Atributos**: `nombre` (String), `edad` (int), `matricula` (String).
-- **Métodos**:
-    - Un constructor que inicialice todos los atributos.
-    - Método `registrarEstudiante` para agregar un nuevo estudiante a una lista de estudiantes.
-    - Método `mostrarInformacion` para imprimir los detalles del estudiante.
+## Ejercicio 1
+Implementa la clase `Caballo` vista en un ejercicio anterior. Pruébala creando instancias y aplicándole algunos métodos.
 
-**Tarea Adicional**:  
-Crea un método estático en la clase `Estudiante` que permita buscar un estudiante por matrícula dentro de una lista.
+## Ejercicio 2
+Crea la clase `Vehiculo`, así como las clases `Bicicleta` y `Coche` como subclases de la primera. Para la clase `Vehiculo`, crea los atributos de clase `vehiculosCreados` y `kilometrosTotales`, así como el atributo de instancia `kilometrosRecorridos`. Crea también algún método específico para cada una de las subclases. Prueba las clases creadas mediante un programa con un menú como el que se muestra a continuación:
 
----
+VEHÍCULOS
+Anda con la bicicleta
+Haz el caballito con la bicicleta
+Anda con el coche
+Quema rueda con el coche
+Ver kilometraje de la bicicleta
+Ver kilometraje del coche
+Ver kilometraje total
+Salir Elige una opción (1-8):
 
-## **Ejercicio 2: Sistema de Biblioteca**
-**Enunciado**:  
-Implementa las clases `Libro` y `Usuario` para gestionar un sistema de biblioteca:
 
-- **Clase `Libro`**:
-    - **Atributos**: `titulo` (String), `autor` (String), `isbn` (String), `disponible` (boolean).
-    - **Métodos**:
-        - Constructor para inicializar los atributos.
-        - Método `prestar` para marcar el libro como no disponible.
-        - Método `devolver` para marcar el libro como disponible.
+## Ejercicio 3
+Crea las clases `Animal`, `Mamifero`, `Ave`, `Gato`, `Perro`, `Canario`, `Pinguino` y `Lagarto`. Crea, al menos, tres métodos específicos de cada clase y redefine el/los método/s cuando sea necesario. Prueba las clases creadas en un programa en el que se instancien objetos y se les apliquen métodos.
 
-- **Clase `Usuario`**:
-    - **Atributos**: `nombre` (String), `id` (String), `prestamos` (lista de libros).
-    - **Métodos**:
-        - Constructor que inicialice los atributos.
-        - Método `pedirLibro` para agregar un libro a la lista de préstamos.
-        - Método `devolverLibro` para eliminar un libro de la lista.
+## Ejercicio 4
+Crea la clase `Fracción`. Los atributos serán `numerador` y `denominador`. Y algunos de los métodos pueden ser `invierte`, `simplifica`, `multiplica`, `divide`, etc.
 
-**Tarea Adicional**:  
-Implementa una clase `Biblioteca` con una lista de usuarios y libros, y métodos para gestionar préstamos y devoluciones.
+## Ejercicio 5
+Crea la clase `Pizza` con los atributos y métodos necesarios. Sobre cada pizza se necesita saber el tamaño - `mediana` o `familiar` - el tipo - `margarita`, `cuatro quesos` o `funghi` - y su estado - `pedida` o `servida`. La clase debe almacenar información sobre el número total de pizzas que se han pedido y que se han servido. Siempre que se crea una pizza nueva, su estado es “pedida”.
 
----
+El siguiente código del programa principal debe dar la salida que se muestra:
 
-## **Ejercicio 3: Tienda Online**
-**Enunciado**:  
-Implementa las clases `Producto`, `Carrito` y `Usuario`:
+```java
+public class PedidosPizza {
+    public static void main(String[] args) {
+        Pizza p1 = new Pizza("margarita", "mediana");
+        Pizza p2 = new Pizza("funghi", "familiar");
+        p2.sirve();
+        Pizza p3 = new Pizza("cuatro quesos", "mediana");
 
-- **Clase `Producto`**:
-    - **Atributos**: `nombre` (String), `precio` (double), `stock` (int).
-    - **Métodos**:
-        - Constructor para inicializar los atributos.
-        - Método `reducirStock` para disminuir el stock cuando se añade al carrito.
+        System.out.println(p1);
+        System.out.println(p2);
+        System.out.println(p3);
 
-- **Clase `Carrito`**:
-    - **Atributos**: `productos` (lista de productos).
-    - **Métodos**:
-        - Método `agregarProducto` para añadir un producto al carrito.
-        - Método `mostrarResumen` para mostrar el total del carrito.
+        p2.sirve();
 
-- **Clase `Usuario`**:
-    - **Atributos**: `nombre` (String), `direccion` (String), `carrito` (Carrito).
-    - **Métodos**:
-        - Constructor para inicializar el usuario con un carrito vacío.
-        - Método `realizarPedido` que muestre el resumen y vacíe el carrito.
+        System.out.println("pedidas: " + Pizza.getTotalPedidas());
+        System.out.println("servidas: " + Pizza.getTotalServidas());
+    }
+}
+````
+Salida esperada:
+pizza margarita mediana, pedida
+pizza funghi familiar, servida
+pizza cuatro quesos mediana, pedida
+esa pizza ya se ha servido
+pedidas: 3
+servidas: 1
 
-**Tarea Adicional**:  
-Valida que no se pueda añadir al carrito más productos de los que hay en stock.
+## Ejercicio 6: Herencia y Polimorfismo en Animales
 
----
+**Objetivo:** Aplicar herencia y polimorfismo para modelar diferentes tipos de animales.
 
-## **Ejercicio 4: Sistema de Transporte**
-**Enunciado**:  
-Implementa las clases `Vehiculo`, `Coche`, y `Autobus` usando herencia:
+Diseña una clase abstracta `Animal` que contenga:
 
-- **Clase base `Vehiculo`**:
-    - **Atributos**: `matricula` (String), `capacidad` (int).
-    - **Métodos**:
-        - Constructor para inicializar atributos.
-        - Método `mostrarInformacion`.
+- Un atributo `nombre` (String).
+- Un método abstracto `hacerSonido()`.
 
-- **Clase `Coche`**:
-    - **Atributos**: `marca` (String), `modelo` (String).
-    - **Métodos**:
-        - Constructor que llame al constructor de la clase base.
-        - Método `mostrarInformacion` sobrescrito para incluir marca y modelo.
+Crea tres clases que hereden de `Animal`:
 
-- **Clase `Autobus`**:
-    - **Atributos**: `empresa` (String), `paradas` (lista de strings).
-    - **Métodos**:
-        - Constructor que llame al constructor de la clase base.
-        - Método `mostrarInformacion` sobrescrito para incluir la empresa y las paradas.
+- **Perro:** Implementa el método `hacerSonido()` para que imprima `"Guau"`.
+- **Gato:** Implementa el método `hacerSonido()` para que imprima `"Miau"`.
+- **Pájaro:** Implementa el método `hacerSonido()` para que imprima `"Pío"`.
 
-**Tarea Adicional**:  
-Crea una lista de vehículos que contenga coches y autobuses, y muestra la información de cada uno utilizando polimorfismo.
+En el programa principal:
+
+1. Crea un array de tipo `Animal` y almacena objetos de las subclases.
+2. Itera sobre el array y llama al método `hacerSonido()` para cada elemento.
 
 ---
 
-## **Ejercicio 5: Red Social**
-**Enunciado**:  
-Implementa las clases `Usuario` y `Publicacion`:
+## Ejercicio 7: Clases Abstractas y Sobreescritura
 
-- **Clase `Usuario`**:
-    - **Atributos**: `nombre` (String), `listaAmigos` (lista de usuarios), `publicaciones` (lista de publicaciones).
-    - **Métodos**:
-        - Constructor para inicializar los atributos.
-        - Método `agregarAmigo` para añadir un usuario a la lista de amigos.
-        - Método `publicarEstado` para agregar una nueva publicación.
+**Objetivo:** Entender la relación entre clases abstractas y su implementación en subclases.
 
-- **Clase `Publicacion`**:
-    - **Atributos**: `contenido` (String), `fecha` (Date).
-    - **Métodos**:
-        - Constructor para inicializar atributos.
-        - Método `mostrarPublicacion` para imprimir el contenido y la fecha.
+Diseña una clase abstracta `Figura` que contenga:
 
-**Tarea Adicional**:  
-Implementa un método en `Usuario` que permita ver las publicaciones de los amigos.
+- Un método abstracto `calcularArea()` que devuelve un `double`.
+- Un método `imprimirArea()` que imprime el área calculada por `calcularArea()`.
+
+Crea dos clases que hereden de `Figura`:
+
+- **Rectangulo:** Recibe `base` y `altura` como atributos. Implementa `calcularArea()` para devolver el área del rectángulo.
+- **Círculo:** Recibe `radio` como atributo. Implementa `calcularArea()` para devolver el área del círculo (usa `Math.PI` para calcular el área).
+
+En el programa principal:
+
+1. Crea una lista de figuras (`List<Figura>`) y agrega instancias de `Rectangulo` y `Círculo`.
+2. Itera sobre la lista y llama al método `imprimirArea()` para cada figura.
 
 ---
 
-**Nota**:  
-Cada ejercicio debe ejecutarse desde un programa principal que permita probar todas las funcionalidades.
+## Ejercicio 8: Polimorfismo con Vehículos
+
+**Objetivo:** Aplicar polimorfismo para modelar el comportamiento de diferentes vehículos.
+
+Crea una clase abstracta `Vehiculo` con:
+
+- Un atributo `velocidad` (int).
+- Un método abstracto `mover()` que imprima cómo se mueve el vehículo.
+
+Crea tres clases que hereden de `Vehiculo`:
+
+- **Coche:** Implementa `mover()` para imprimir `"El coche se mueve por la carretera a [velocidad] km/h"`.
+- **Bicicleta:** Implementa `mover()` para imprimir `"La bicicleta se mueve por el carril bici a [velocidad] km/h"`.
+- **Avion:** Implementa `mover()` para imprimir `"El avión vuela por el cielo a [velocidad] km/h"`.
+
+En el programa principal:
+
+1. Crea un array o lista de vehículos y agrega instancias de `Coche`, `Bicicleta` y `Avion`.
+2. Recorre el array y llama al método `mover()` para cada vehículo.
+
+
+
+
