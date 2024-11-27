@@ -55,4 +55,11 @@ Implementa la clase `Terminal`. Un terminal tiene asociado un número. Los termi
 
 El programa principal debe crear varios terminales, realizar llamadas entre ellos y mostrar el tiempo de conversación de cada uno. El formato de salida esperado es el siguiente:
 
+Nº 678 11 22 33 - 0s de conversación
+Nº 644 74 44 69 - 0s de conversación
+Nº 678 11 22 33 - 520s de conversación
+Nº 644 74 44 69 - 320s de conversación
+Nº 622 32 89 09 - 200s de conversación
+Nº 664 73 98 18 - 0s de conversación
+
 
