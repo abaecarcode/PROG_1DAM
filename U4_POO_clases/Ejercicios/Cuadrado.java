@@ -33,10 +33,11 @@ public class Cuadrado {
 
     public String toString() {
         int i, espacios;    // Variables de iteracion por filas y columnas
-        String resultado = "";  // Variable de tipo texto que acumula la representacion visual del cuadrado
+        StringBuilder resultado = new StringBuilder();  // Variable de tipo texto que acumula la representacion visual del cuadrado
 
+        // Version 1
         // Bucle que acumula lado asteriscos y un salto de linea
-        for (i = 0; i < this.lado; i++) {
+        /*for (i = 0; i < this.lado; i++) {
             resultado += "* ";
         }
         resultado += "\n";
@@ -55,6 +56,43 @@ public class Cuadrado {
 
 
         return resultado;
+    }*/
+        // Version 2
+        /*for (i = 0; i < lado; i++) {
+            for (espacios = 0; espacios < lado; espacios++) {
+                if(i == 0 || i == lado - 1 || espacios == 0 || espacios == lado-1) {
+                    resultado.append("*  ");
+                } else {
+                    resultado.append("   ");
+                }
+            }
+            resultado.append("\n");
+        }
+        return resultado.toString();
+    }*/
+
+        // Version 3
+        char[][] matriz = new char[lado][lado];
+
+        // Construyendo el cuadrado o la matriz
+        for (i = 0; i < lado; i++) {
+            for (espacios = 0; espacios < lado; espacios++) {
+                if(i == 0 || i == lado - 1 || espacios == 0 || espacios == lado-1){
+                    matriz[i][espacios] = '*';
+                } else {
+                    matriz[i][espacios] = ' ';
+                }
+            }
+        }
+
+        // Construyendo el StringBuilder resultado (lo que se mostrará)
+        for (i = 0; i < lado; i++) {
+            for (espacios = 0; espacios < lado; espacios++) {
+                resultado.append(matriz[i][espacios]).append("  ");
+            }
+            resultado.append("\n");
+        }
+        return resultado.toString();
     }
 
     public static void main(String[] args) {
