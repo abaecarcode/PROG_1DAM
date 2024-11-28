@@ -158,6 +158,14 @@ Los modificadores de acceso en Java definen la visibilidad de los atributos y m�
 3. **`protected`**: Accesible dentro del mismo paquete o por clases derivadas.
 4. **Sin modificador** (default): Accesible solo dentro del mismo paquete.
 
+| **Modificador**            | **Visibilidad dentro de la misma clase** | **Visibilidad dentro del mismo paquete** | **Visibilidad en subclases (dentro de otro paquete)** | **Visibilidad desde otras clases (fuera del paquete)** |
+|-----------------------------|------------------------------------------|-------------------------------------------|------------------------------------------------------|-------------------------------------------------------|
+| `private`                  | ✔️ Visible                              | ❌ No visible                             | ❌ No visible                                        | ❌ No visible                                         |
+| `public`                   | ✔️ Visible                              | ✔️ Visible                                | ✔️ Visible                                           | ✔️ Visible                                            |
+| `protected`                | ✔️ Visible                              | ✔️ Visible                                | ✔️ Visible (solo a través de herencia)               | ❌ No visible si no es heredado                       |
+| Sin modificador (paquete)  | ✔️ Visible                              | ✔️ Visible                                | ❌ No visible (incluso si es heredado)               | ❌ No visible                                         |
+
+
 (Código de ejemplo: Modificadores de acceso)
 ````java
 class Persona {

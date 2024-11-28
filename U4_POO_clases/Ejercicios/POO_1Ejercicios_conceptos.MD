@@ -24,7 +24,7 @@ Lista los atributos de la clase `Alumno`. ¿Sería `nombre` uno de los atributos
 ## Ejercicio 7
 ¿Cuáles serían los atributos de la clase `Ventana` (de ordenador)? ¿Cuáles serían los métodos? Piensa en las propiedades y en el comportamiento de una ventana de cualquier programa.
 
-# Ejercicios Avanzados de Programación Orientada a Objetos
+# Ejercicios intermedios de Programación Orientada a Objetos
 
 ## Ejercicio 6
 Crea la clase `Tiempo` con los métodos `suma` y `resta`. Los objetos de la clase `Tiempo` son intervalos de tiempo y se crean de la forma:
