@@ -77,6 +77,6 @@ public class Ej7_ExpoCoches {
                     default:
                 }
             }
-        } while (opcion < 3); // menú principal
+        } while (opcion != 3); // menú principal
     }
 }
