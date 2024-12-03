@@ -2,8 +2,8 @@ package Ejercicios.POO_1_Avanzados;
 
 class Terminal {
 
-    private String numero;
-    private int tiempoDeConversacion; // tiempo de conversación en segundos
+    protected String numero;
+    protected int tiempoDeConversacion; // tiempo de conversación en segundos
 
     Terminal(String numero) {
         this.numero = numero;
