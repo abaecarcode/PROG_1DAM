@@ -108,7 +108,6 @@ Nº 622 32 89 09 - 750s de conversación - tarificados 0,00 euros
 
 ## Ejercicios 10
 
-Ejercicio 10
 Las amebas son seres unicelulares de forma cambiante ya que carecen de pared celular. Fagocitan cualquier cosa que se les pone por delante. Crea la
 clase ``Ameba`` con el atributo ``peso``, un número entero que indica los microgramos que pesa el bicho. Al tratarse de una unidad tan pequeña, no se tienen en
 cuenta los decimales, será un dato entero. Cuando Dios crea una ameba de la nada – `new Ameba()` – su peso es de 3 microgramos. Al comer, va incrementando
@@ -123,10 +122,12 @@ Programa principal:
 ````java
 Ameba a1 = new Ameba();
 a1.come(2);
-System.out.println(a1);
+System.out.println(a1); //Out: 4
 Ameba a2 = new Ameba();
 a2.come(4);
 System.out.println(a2);
+
+//Una ameba se come a otra ameba
 a1.come(a2);
 System.out.println(a1);
 System.out.println(a2);
