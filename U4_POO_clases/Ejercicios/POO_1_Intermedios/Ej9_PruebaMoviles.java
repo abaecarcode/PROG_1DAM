@@ -1,4 +1,4 @@
-package Ejercicios.POO_1_Avanzados;
+package Ejercicios.POO_1_Intermedios;
 
 public class Ej9_PruebaMoviles {
     public static void main(String[] args) {

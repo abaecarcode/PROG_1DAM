@@ -1,6 +1,6 @@
-package Ejercicios.POO_1_Avanzados;
+package Ejercicios.POO_1_Intermedios;
 
-class Terminal {
+public class Terminal {
 
     protected String numero;
     protected int tiempoDeConversacion; // tiempo de conversación en segundos
