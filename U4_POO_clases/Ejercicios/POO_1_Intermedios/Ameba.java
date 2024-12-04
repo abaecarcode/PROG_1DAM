@@ -1,30 +1,5 @@
 package Ejercicios.POO_1_Intermedios;
 
-<<<<<<< HEAD
-class Ameba {
-    int peso; // peso en microgramos
-
-    public Ameba() {
-        this.peso = 3;
-    }
-
-    void come(int pesoComida) {
-        this.peso += pesoComida - 1;
-    }
-
-    void come(Ameba a) {
-        this.peso += a.peso - 1;
-        a.peso = 0; // la ameba comida se queda sin sustancia
-    }
-
-    @Override
-    public String toString() {
-        return "Soy una ameba y peso " + peso + " microgramos.";
-    }
-
-}
-=======
-
 /**
  * Análisis del problema:
  *  1. Peso inicial: Cada ameba comienza con un peso de 3 microgramos.
@@ -61,4 +36,3 @@ public class Ameba {
 
     }
 }
->>>>>>> 104b1d55dd8d858875430979becdda81b74fe333
