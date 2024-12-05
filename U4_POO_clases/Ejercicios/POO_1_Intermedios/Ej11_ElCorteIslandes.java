@@ -6,6 +6,7 @@ public class Ej11_ElCorteIslandes {
         TarjetaRegalo t2 = new TarjetaRegalo(120);
         System.out.println(t1);
         System.out.println(t2);
+
         t1.gasta(45.90);
         t2.gasta(5);
         t2.gasta(200);
