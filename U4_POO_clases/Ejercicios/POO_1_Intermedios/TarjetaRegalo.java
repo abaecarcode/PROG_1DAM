@@ -30,7 +30,7 @@ public class TarjetaRegalo {
 
     void gasta(double gasto) {
         if (gasto > this.saldo) {
-            System.out.printf("No tiene suficiente saldo para gastar %.2f€\n", gasto);
+            System.out.printf("No tiene suficiente saldo para gastar en Navidad %.2f€\n", gasto);
         } else {
             this.saldo -= gasto;
         }
