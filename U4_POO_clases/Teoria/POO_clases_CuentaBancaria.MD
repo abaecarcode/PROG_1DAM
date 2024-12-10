@@ -81,7 +81,7 @@ public class CuentaBancaria {
 }
 
 // Clase Principal para probar la clase CuentaBancaria
-public class PruebaCuentaBancaria {
+class PruebaCuentaBancaria {
     public static void main(String[] args) {
         // Crear un objeto de la clase CuentaBancaria
         CuentaBancaria miCuenta = new CuentaBancaria("Juan Pérez", 1000);
