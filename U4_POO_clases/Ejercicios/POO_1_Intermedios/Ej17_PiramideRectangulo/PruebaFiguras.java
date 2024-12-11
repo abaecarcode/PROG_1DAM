@@ -11,10 +11,15 @@ public class PruebaFiguras {
         Piramide piramide2 = new Piramide(4);
         Piramide piramide3 = new Piramide(4);
 
+        Rectangulo rectangulo = new Rectangulo(3, 4);
+        Rectangulo rectangulo1 = new Rectangulo(4, 3);
+
         System.out.println("Piramides creadas hasta el momento: " + Piramide.getPiramidesCreadas());
+        System.out.println(piramide3);
 
-
-
+        System.out.println(rectangulo);
+        //System.out.println("Rectángulos creados hasta el momento: " + Rectangulo.getRectangulosCreados());
+        System.out.println(rectangulo1);
 
     }
 

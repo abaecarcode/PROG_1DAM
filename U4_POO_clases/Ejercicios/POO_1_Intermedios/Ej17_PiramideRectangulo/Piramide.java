@@ -20,4 +20,55 @@ public class Piramide {
     public static int getPiramidesCreadas() {
         return piramidesCreadas;
     }
+
+    public String toString() {
+        /*String cadena = "";
+        int espacios = altura - 1;
+        int planta = 1;
+        int longitudLinea = 1;
+
+        while(planta <= this.altura) {
+
+            // inserta espacios
+            for (int i = 1; i <= espacios; i++) {
+                cadena += " ";
+            }
+
+            // linea de la piramide
+            for (int i = 1; i <= longitudLinea; i++) {
+                cadena += "*";
+            }
+            cadena += "\n";
+            planta++;
+            espacios--;
+            longitudLinea += 2;
+        }
+        return cadena;
+        */
+
+        // Version StringBuilder
+
+        StringBuilder piramide = new StringBuilder();
+
+        for (int i = 1; i <= altura; i++) {
+            // Agrego espacios
+            for (int j = 1; j <= altura - i; j++) {
+                piramide.append(" ");
+            }
+            // Agrego asteriscos:
+            // Patrón de los asteriscos:
+            //  primera fila: 1 asterisco, segunda fila: 3, luego 5, 7, etc.
+            // Este patrón se representa matemáticamente como 2*i-1 donde:
+            //      i es el número de fila actual(empezando desde 1)
+            //      2*i-1 genera los números impares de manera secuencial: 1, 3, 5, 7, ...
+            for (int j = 1; j <= 2 * i - 1; j++) {
+                piramide.append("*");
+            }
+            // Agregar salto de línea:
+            piramide.append("\n");
+
+        }
+        return piramide.toString();
+    }
+
 }
