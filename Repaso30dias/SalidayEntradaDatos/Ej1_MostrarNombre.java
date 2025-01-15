@@ -1,4 +1,4 @@
-package SalidaDatosPantalla;
+package SalidayEntradaDatos;
 
 public class Ej1_MostrarNombre {
     public static void main(String[] args) {

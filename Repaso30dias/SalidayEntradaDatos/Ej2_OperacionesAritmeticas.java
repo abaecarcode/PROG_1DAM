@@ -1,4 +1,4 @@
-package SalidaDatosPantalla;
+package SalidayEntradaDatos;
 
 import java.util.Scanner;
 
