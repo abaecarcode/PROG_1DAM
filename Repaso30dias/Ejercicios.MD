@@ -6,9 +6,7 @@
 
 ***Ej1. Realiza un programa que muestre tu nombre por pantalla.***
 
-***Ej2. Realiza un programa que pida al usuario un valor en euros y escriba su valor en
-pesetas (un euro son 166'386 pesetas). Mejóralo para que el usuario pueda introducir el valor en euros o en pesetas, y el programa devuelva el valor en la
-moneda contraria.***
+***Ej2. Realiza un programa que pida al usuario un valor en euros y escriba su valor en pesetas (un euro son 166'386 pesetas). Mejóralo para que el usuario pueda introducir el valor en euros o en pesetas, y el programa devuelva el valor en la moneda contraria.***
 
 ***Ej3. Realiza un programa que pida un número entero al usuario y escriba por pantalla su valor absoluto.***
 
