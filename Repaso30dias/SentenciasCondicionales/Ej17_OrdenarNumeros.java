@@ -1,5 +1,6 @@
 package SentenciasCondicionales;
 
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
@@ -12,6 +13,14 @@ public class Ej17_OrdenarNumeros {
         double a, b, c;
         Scanner entrada = new Scanner(System.in);
 
+
+        ArrayList<Double> numeros = new ArrayList<>();
+        for(int i = 0; i < 3; i++) {
+            numeros.add(entrada.nextDouble());
+        }
+
+        System.out.println("Array numeros: " + numeros);
+
         System.out.print("Ingrese el primer numero: ");
         a = entrada.nextDouble();
         System.out.print("Ingrese el segundo numero: ");
@@ -23,13 +32,20 @@ public class Ej17_OrdenarNumeros {
         Arrays.sort(listanum);
         System.out.println(Arrays.toString(listanum));
 
-        ArrayList<Double> numeros = new ArrayList<>();
+
+        ArrayList<Double> numeros2 = new ArrayList<>();
+        for (double numero : numeros2) {
+            numeros2.add(numero);
+        }
+
+        System.out.println("Array numeros2: " + numeros2);
+        /*ArrayList<Double> numeros = new ArrayList<>();
         for (double numero : numeros) {
             numeros.add(numero);
         }
 
         Collections.sort(numeros);
-        System.out.println(numeros);
+        System.out.println(numeros);*/
 
     }
 }

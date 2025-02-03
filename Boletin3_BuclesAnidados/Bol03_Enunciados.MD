@@ -9,9 +9,9 @@ VARIABLES
   suma, i, j: ENTERO
 
 COMIENZO
-  PARA i <- 1 HASTA 4
-    PARA j <- 3 HASTA 0 INC -1
-      suma <- i*10+j
+  PARA i = 1 HASTA 4
+    PARA j = 3 HASTA 0 INC -1
+      suma = i*10+j
       escribir (suma)
     FIN PARA
   FIN PARA
@@ -27,11 +27,11 @@ VARIABLES
   i, j: ENTERO
 
 COMIENZO
-  PARA i <- 1 HASTA 3
-    j <- i+1
+  PARA i = 1 HASTA 3
+    j = i+1
     MIENTRAS j < 4
       escribir (j-i)
-      j <- j+1
+      j = j+1
     FIN MIENTRAS
   FIN PARA
 FIN
