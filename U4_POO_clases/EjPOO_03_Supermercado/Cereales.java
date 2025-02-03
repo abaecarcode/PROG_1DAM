@@ -73,7 +73,7 @@ public class Cereales implements EsAlimento{
                 ", tipoCereal='" + tipoCereal + '\'' +
                 ", precio=" + precio +
                 ", caducidad=" + caducidad +
-                ", calorias=" + calorias +
+                //", calorias=" + calorias +
                 '}';
     }
 }
