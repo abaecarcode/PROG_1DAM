@@ -1,0 +1,67 @@
+@startuml
+
+' Clase abstracta principal
+abstract class Animal {
+    + String nombre
+    + int edad
+    + String genero
+    # String habitat
+    + void comer()
+    + void moverse()
+    + void dormir()
+    # void reproducirse()
+}
+
+' Clase concreta Perro
+class Perro {
+    + String raza
+    + boolean tieneChip
+    - void ladrar()
+    + void jugar()
+    + void proteger()
+}
+
+' Clase concreta Gato
+class Gato {
+    + String colorPelaje
+    + boolean esDomestico
+    - void maullar()
+    + void cazar()
+    + void ronronear()
+}
+
+' Clase concreta Pez
+class Pez {
+    + String tipoAgua
+    + int profundidadMaxima
+    - void nadar()
+    + void buscarAlimento()
+    + void defenderse()
+}
+
+' Clase concreta Ave
+class Ave {
+    + double envergaduraAlas
+    + boolean esMigratoria
+    + void volar()
+    + void construirNido()
+    + void emitirSonido()
+}
+
+' Clase concreta Reptil
+class Reptil {
+    + boolean venenoso
+    + String tipoEscamas
+    + void arrastrarse()
+    + void regularTemperatura()
+    + void camuflarse()
+}
+
+' Relaciones de herencia
+Animal <|-- Perro
+Animal <|-- Gato
+Animal <|-- Pez
+Animal <|-- Ave
+Animal <|-- Reptil
+
+@enduml

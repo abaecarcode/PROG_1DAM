@@ -1,19 +1,30 @@
 package Teoria;
 
+/**
+* Clase que representa a una persona con nombre y edad
+* @author Alejandro Torres
+*
+* */
+
 public class Persona {
     private String nombre;
     private String apellido;
     private int edad;
     private double altura;
 
-    // Constructor por defecto
+
     public Persona() {
         this.nombre = "Desconocido";
         this.edad = 0;
         this.altura = 0.0;
     }
 
-    //Constructor parametrizado
+    /**
+     * Constructor parametrizado de la clase Persona
+     * @param nombre Nombre de la persona
+     * @param edad Edad de la persona
+     * */
+
     public Persona(String nombre, String apellido, int edad, double altura) {
         this.nombre = nombre;
         this.apellido = apellido;
@@ -21,7 +32,11 @@ public class Persona {
         this.altura = altura;
     }
 
-    // Métodos getter y setter
+    /**
+    * Obtiene el nombre de la persona
+    * @return El nombre de la persona
+    *
+     */
     public String getNombre() {
         return nombre;
     }
