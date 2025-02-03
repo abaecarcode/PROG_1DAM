@@ -38,6 +38,11 @@
 
 ***Ej16b. Amplía el programa anterior para que diga la nota del boletín (IN, SUD, BN, NT, SB, MH)***
 
+***Ej17. Realiza un programa que ordene de menor a mayor tres números enteros introducidos por teclado***
+
+## Bucles
+
+
 
 
 
