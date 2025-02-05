@@ -3,7 +3,7 @@ package Ejercicios_2_Trimestre.Gestion_Notas_Alumnos;
 import java.util.ArrayList;
 
 public class GestorDeCalificaciones {
-    private ArrayList<Estudiante> estudiantes;
+    ArrayList<Estudiante> estudiantes;
 
     public GestorDeCalificaciones() {
         this.estudiantes = new ArrayList<>();

@@ -41,6 +41,6 @@ public class Estudiante {
     }
 
     public void setCalificaciones(double[] calificaciones) {
-        this.calificaciones = calificaciones;
+        this.calificaciones = new double[][]{calificaciones};
     }
 }
