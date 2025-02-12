@@ -5,5 +5,5 @@ package Excepciones;
  */
 public class PromedioNumeros {
 
-    
+
 }
