@@ -35,6 +35,13 @@ public class Parking {
         this.nombre = nombre;
         // Se inicializa la lista con el número de plazas y se llenan con valores null
         matriculas = new ArrayList<>(Collections.nCopies(plazas, null));
+
+        /* Equivalencia a inicializar el arraylist matriculas en lugar de utilizar Collections
+        matriculas = new ArrayList<>();
+        for (int i = 0; i < plazas; i++) {
+            matriculas.add(null);
+        }
+        */
     }
 
     /**

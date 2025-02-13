@@ -14,7 +14,7 @@ public class ParkingException extends Exception {
     /**
      * Construye una nueva ParkingException con el mensaje de detalle y el número de matrícula especificados.
      *
-     * @param mensaje El mensaje de detalle (que se guarda para su posterior recuperación por el método getMessage()).
+     * @param mensaje El mensaje de detalle (que se guarda para su posterior recuperación por el metodo getMessage()).
      * @param matricula El número de matrícula asociado con el error de estacionamiento.
      */
     public ParkingException(String mensaje, String matricula) {
