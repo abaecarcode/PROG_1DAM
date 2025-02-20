@@ -14,53 +14,25 @@ public class Producto {
         this.cantidadStock = cantidadStock;
     }
 
-    public int getCodigo() {
-        return codigo;
+    public void mostrarInformacion() {
+        System.out.println(("Codigo: " + codigo + ", Nombre: " + nombre + ", Precio: " + precio+ ", Cantidad: " + cantidadStock ));
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public double getPrecio() {
-        return precio;
-    }
-
-    public int getCantidadStock() {
-        return cantidadStock;
-    }
-
-    public void setCodigo(int codigo) {
-        this.codigo = codigo;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public void setPrecio(double precio) {
-        this.precio = precio;
-    }
-
-    public void setCantidadStock(int cantidadStock) {
-        this.cantidadStock = cantidadStock;
-    }
-
-    @Override
-    public String toString() {
-        return "Producto{" +
-                "codigo=" + codigo +
-                ", nombre='" + nombre + '\'' +
-                ", precio=" + precio +
-                ", cantidadStock=" + cantidadStock +
-                '}';
-    }
-
-    public void mostrarInformacion() {}
-
-    public void reducirCantidadStock(int cantidad) {
+    public boolean reducirCantidadStock(int cantidad) {
+        if (cantidad > cantidadStock) {
+            System.out.println("Stock insuficiente. No se puede realizar la venta");
+            return false;
+        } else {
+            cantidadStock -= cantidad;
+            return true;
+        }
     }
 
     public void incrementarCantidadStock(int cantidad) {
+        cantidadStock += cantidad;
+    }
+
+    public int getCodigo() {
+        return this.codigo;
     }
 }
