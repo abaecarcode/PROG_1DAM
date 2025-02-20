@@ -34,5 +34,18 @@ public class Inventario {
         }
     }
 
+    /*- `venderProducto(int codigo, int cantidad)`: Disminuye el stock de un producto al realizar una venta. Muestra un mensaje si no hay suficiente stock disponible.*/
+    public void venderProducto(int codigo, int cantidad) {
+        Producto producto = buscarProducto(codigo);
+        if (producto == null) {
+            System.out.println("El producto con el código " + codigo + " no existe.");
+        } else {
+            boolean ventaOk = producto.reducirCantidadStock(cantidad);
+            if (ventaOk) {
+                System.out.println("Venta realizada correctamente. Stock restante: " + producto.getCantidad());
+            }
+        }
+    }
+
 
 }

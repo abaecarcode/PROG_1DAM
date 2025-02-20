@@ -35,4 +35,8 @@ public class Producto {
     public int getCodigo() {
         return this.codigo;
     }
+
+    public int getCantidad() {
+        return this.cantidadStock;
+    }
 }

@@ -14,7 +14,7 @@ public class GestionInventario {
         int opcion;
 
         do {
-            System.out.println("--Menu de gestión del inventario--");
+            System.out.println("\n--Menu de gestión del inventario--");
             System.out.println("1. Agregar producto nuevo");
             System.out.println("2. Mostrar ionventario");
             System.out.println("3. Vender producto");
@@ -46,7 +46,14 @@ public class GestionInventario {
                     break;
                 case 3:
                     // Vender producto
-                    System.out.println("Falta por implementar..");
+                    System.out.print("Introduce el codigo de producto: ");
+                    int codigoVenta = entrada.nextInt();
+                    entrada.nextLine();
+                    System.out.print("Introduce la cantidad a vender: ");
+                    int cantidadVenta = entrada.nextInt();
+
+                    inventario.venderProducto(codigoVenta, cantidadVenta);
+
                     break;
                 case 4:
                     // Salir
