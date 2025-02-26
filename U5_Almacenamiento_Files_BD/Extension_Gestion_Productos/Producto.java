@@ -1,21 +1,21 @@
-package Ejercicios_2_Trimestre.Gestion_Productos;
+package Extension_Gestion_Productos;
 
-public class Producto {
+public class Producto extends Articulo {
 
-    private int codigo;
-    private String nombre;
-    private double precio;
-    private int cantidadStock;
+    private Proveedor proveedor; // Se añade composición en la clase Producto que tiene uno de sus atributo un tipo o clase Proveedor
+    private Categoria categoria; // Se añade composición en la clase Producto que tiene uno de sus atributo un tipo o clase Categoria
 
-    public Producto(int codigo, String nombre, double precio, int cantidadStock) {
-        this.codigo = codigo;
-        this.nombre = nombre;
-        this.precio = precio;
-        this.cantidadStock = cantidadStock;
+    public Producto(int codigo, String nombre, double precio, int cantidadStock, Proveedor proveedor, Categoria categoria) {
+        super(codigo, nombre, precio, cantidadStock);
+        this.proveedor = proveedor;
+        this.categoria = categoria;
     }
 
+    @Override
     public void mostrarInformacion() {
         System.out.println(("Codigo: " + codigo + ", Nombre: " + nombre + ", Precio: " + precio+ ", Cantidad: " + cantidadStock ));
+        proveedor.mostrarInformacion();
+        categoria.mostrarInformacion();
     }
 
     public boolean reducirCantidadStock(int cantidad) {
@@ -32,11 +32,11 @@ public class Producto {
         cantidadStock += cantidad;
     }
 
-    public int getCodigo() {
-        return this.codigo;
+    public Proveedor getProveedor() {
+        return proveedor;
     }
 
-    public int getCantidad() {
-        return this.cantidadStock;
+    public Categoria getCategoria() {
+        return categoria;
     }
 }

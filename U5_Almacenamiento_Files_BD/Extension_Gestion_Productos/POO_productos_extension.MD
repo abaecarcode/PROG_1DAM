@@ -62,19 +62,98 @@ return null;
 
 La abstracción podría mejorar ocultando más detalles internos, por ejemplo, usando métodos private dentro de Inventario para evitar que GestionInventario manipule la estructura interna directamente.
 
+5️⃣ Composición️ (✔️ Correcto)
+
+  * Inventario contiene una lista de productos.    
+  * GestionInventario utiliza un objeto Inventario para gestionar los productos.  
+
+La composición es una relación donde un objeto contiene otro objeto como atributo en su estructura. Se usa para modelar relaciones más realistas en los sistemas.  
+
+📌 Mejorando la Composición:
+
+* Se podría mejorar la composición permitiendo que GestionInventario tenga un Inventario como atributo, en lugar de crear un nuevo Inventario cada vez que se inicia el programa. Esto permitiría mantener la información entre ejecuciones.  
+
+* Podemos mejorar la composición añadiendo clases que representen otros elementos del inventario. Por ejemplo, una clase Venta que contenga información sobre las ventas realizadas, o una clase Reporte que genere informes sobre el inventario.  
+
+* Otro caso común de composición es cuando un producto pertenece a una categoría (Electrónica, Ropa, Alimentos, etc.). Se podría crear una clase Categoría que contenga una lista de productos y métodos para gestionarlos.
+
 
 
 ## **Persistencia en un archivo CSV.**
 
-📌 ¿Qué vamos a hacer?
-✅ Guardar los productos en un archivo inventario.csv cada vez que se agregue un producto.
-✅ Cargar los productos desde el archivo inventario.csv al iniciar el programa.
-✅ Usar BufferedWriter y BufferedReader para manejar el archivo de manera eficiente.
+### **¿Qué es un CSV?**  
+
+Un CSV (Comma-Separated Values) es un archivo de texto plano donde los datos están separados por comas o por otro delimitador (como ; o |). Se usa comúnmente para almacenar datos tabulares (como hojas de cálculo o bases de datos).
+
+```csv
+codigo,nombre,precio,stock,proveedor
+1,Camiseta,15.99,50,Nike`
+2,Pantalón,29.99,30,Adidas`
+3,Zapatos,39.99,20,Puma`
+``` 
+📌 Ventajas de CSV:  
+
+  ✔ Ligero y fácil de leer con cualquier editor de texto.  
+  ✔ Compatible con Excel y bases de datos.  
+  ✔ Se puede procesar fácilmente con BufferedReader en Java.  
+
+📌 Desventajas de CSV:  
+
+  ❌ No soporta estructuras complejas (listas dentro de listas, relaciones anidadas).  
+  ❌ No tiene tipos de datos explícitos (todo es texto).  
+  ❌ Problemas con comas dentro de los valores (si un nombre lleva una coma, hay que encerrarlo entre comillas).  
+
+📌 ¿Qué vamos a hacer?  
+
+  ✅ Guardar los productos en un archivo inventario.csv cada vez que se agregue un producto.  
+  ✅ Cargar los productos desde el archivo inventario.csv al iniciar el programa.  
+  ✅ Usar BufferedWriter y BufferedReader para manejar el archivo de manera eficiente.  
 
 ## **Persistencia con JSON**
 
-📢 Resumen de la mejora  
-  ✅ Ahora los productos se guardan en inventario.json, lo que permite una mejor organización de los datos.  
+### **¿Qué es un JSON?**
+
+Un JSON (JavaScript Object Notation) es un formato ligero de intercambio de datos que se utiliza para almacenar y transmitir información estructurada. Es fácil de leer y escribir para los humanos, y fácil de parsear y generar para las máquinas.
+
+```json
+[
+  {
+    "codigo": 1,
+    "nombre": "Camiseta",
+    "precio": 20.99,
+    "cantidadStock": 50,
+    "proveedor": {
+      "nombre": "Nike",
+      "telefono": "123456789"
+    }
+  },
+  {
+    "codigo": 2,
+    "nombre": "Zapatos",
+    "precio": 49.99,
+    "cantidadStock": 20,
+    "proveedor": {
+      "nombre": "Adidas",
+      "telefono": "987654321"
+    }
+  }
+]
+
+````
+📌 Ventajas de JSON: ✔ Estructura más flexible (permite anidación de objetos). 
+
+  ✔ Más fácil de leer para humanos y máquinas.  
+  ✔ Compatible con muchas tecnologías (APIs, bases de datos NoSQL como MongoDB).  
+  ✔ Java tiene bibliotecas como Gson o Jackson para manejar JSON de manera sencilla.  
+
+📌 Desventajas de JSON:  
+
+  ❌ Un poco más pesado que CSV, pero la diferencia es mínima en pequeños archivos.   
+  ❌ No es directamente compatible con Excel, pero se puede convertir fácilmente.  
+
+📢 Resumen de la mejora con JSON:  
+  
+  ✅ Ahora los productos se guardan en inventario.json, lo que permite una mejor organización de los datos.   
   ✅ El inventario se carga automáticamente al iniciar, sin perder la información.  
   ✅ Cada vez que se vende un producto o se añade uno nuevo, el archivo se actualiza.  
   ✅ Usamos Gson para convertir automáticamente objetos Java en JSON y viceversa.  

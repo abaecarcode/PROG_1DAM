@@ -15,6 +15,7 @@
       <sourceFolder url="file://$MODULE_DIR$/U3_Metodos_y_funciones/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/U4_POO_clases" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Repaso30dias" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/U5_Almacenamiento_Files_BD" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

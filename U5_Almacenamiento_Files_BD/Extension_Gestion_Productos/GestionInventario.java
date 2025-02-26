@@ -1,4 +1,4 @@
-package Ejercicios_2_Trimestre.Gestion_Productos;
+package Extension_Gestion_Productos;
 
 import java.util.Scanner;
 
@@ -25,20 +25,34 @@ public class GestionInventario {
             switch (opcion) {
                 case 1: //Agregar
 
-                    System.out.println("Introduce el código del producto:");
+                    System.out.print("Introduce el código del producto: ");
                     int codigo = entrada.nextInt();
                     entrada.nextLine();
-                    System.out.println("Introduce el nombre del producto:");
+                    System.out.print("Introduce el nombre del producto: ");
                     String nombre = entrada.nextLine();
-                    System.out.println("Introduce el precio del producto:");
+                    System.out.print("Introduce el precio del producto: ");
                     double precio = entrada.nextDouble();
-                    System.out.println("Introduce el cantidad del producto:");
+                    System.out.print("Introduce el cantidad del producto: ");
                     int cantidadStock = entrada.nextInt();
 
-                    Producto nuevoProducto = new Producto(codigo, nombre, precio, cantidadStock);
+                    // Solicitar información del proveedor
+                    System.out.print("Introduce el nombre del proveedor: ");
+                    String nombreProveedor = entrada.nextLine();
+                    entrada.nextLine();
+                    System.out.print("Introduce el teléfono del proveedor: ");
+                    String telefonoProveedor = entrada.nextLine();
+
+                    // Solicitar información de la categoria del producto
+                    System.out.print("Introduce el nombre de la categoria: ");
+                    String nombreCategoria = entrada.nextLine();
+
+                    System.out.print("Introduce la descripcion de la categoria: ");
+                    String descripcionCategoria = entrada.nextLine();
+
+                    Producto nuevoProducto = new Producto(codigo, nombre, precio, cantidadStock, new Proveedor(nombreProveedor, telefonoProveedor), new Categoria(nombreCategoria, descripcionCategoria));
 
                     inventario.agregarProducto(nuevoProducto);
-                    System.out.println("Producto agregado correctamente...");
+                    System.out.println("\nProducto agregado correctamente...");
                     break;
                 case 2:
                     // Mostrar inventario
