@@ -63,7 +63,7 @@ GestorNotificaciones gestor = new GestorNotificaciones();
 }
 ```
 
-Este ejercicio de POO en Java propone un Sistema de Notificaciones donde, a partir del método main proporcionado, los estudiantes deben inferir e implementar todas las clases e interfaces necesarias.
+Este ejercicio de POO en Java propone un Sistema de Notificaciones donde, a partir del método main proporcionado, implementar todas las clases e interfaces necesarias.
 
 El sistema de notificaciones debe permitir:
 
@@ -71,7 +71,7 @@ El sistema de notificaciones debe permitir:
 * Utilizar diversos servicios de envío (email, SMS, push)
 * Gestionar distintos tipos de destinatarios (usuarios, administradores, clientes)   
 
-A partir del código del método main, los estudiantes deben:  
+A partir del código del método main, se debe:  
 
 * Identificar las clases necesarias (al menos GestorNotificaciones, ServicioNotificacion y sus subclases, Notificacion y sus subclases, Destinatario y sus subclases)
 * Determinar las interfaces que podrían necesitarse
