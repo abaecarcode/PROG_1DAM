@@ -62,7 +62,7 @@ public class Inventario{
             // Escribir cada producto en el CSV
             for (Producto producto : productos) {
                 bw.write(producto.getCodigo() + "," + producto.getNombre() + "," + producto.getPrecio() + "," + producto.getCantidadStock() + "," +
-                        producto.getProveedor().getNombre() + "," + producto.getProveedor().getTelefono() + "," +
+                        producto.getProveedor().getNombre() + ", " + producto.getProveedor().getTelefono() + "," +
                         producto.getCategoria().getNombre() + "," + producto.getCategoria().getDescripcion());
                 bw.newLine();
             }
