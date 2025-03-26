@@ -1,0 +1,6 @@
+Trabajando con el paquete java.NIO. Ficheros grandes...
+
+/usr/lib/jvm/java-1.17.0-openjdk-amd64/bin/java -javaagent:/home/usuario/.local/share/JetBrains/Toolbox/apps/intellij-idea-ultimate/lib/idea_rt.jar=41247 -Dfile.encoding=UTF-8 -classpath /home/usuario/Desktop/PROGRAMACION 1DAM/PROG_1DAM/out/production/PROG_1DAM EjerciciosFicheros2.Ejercicio1NIO
+Archivo creado y escritó correctamente.
+
+Process finished with exit code 0
