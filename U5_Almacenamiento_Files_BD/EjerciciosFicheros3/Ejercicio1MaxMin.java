@@ -6,21 +6,29 @@ import java.io.FileReader;
 import java.io.IOException;
 
 public class Ejercicio1MaxMin {
-    public static void main(String[] args) throws IOException {
-        String archivo = "U5_Almacenamiento_Files_BD/EjerciciosFicheros3/Ejercicio1MaxMin.java";
+    public static void main(String[] args) {
+        String archivo = "U5_Almacenamiento_Files_BD/EjerciciosFicheros3/Documentos/numeros.txt";
         // Opcion A
         //int maximo  = encontrarMaximo(archivo);
         //int minimo = encontrarMinimo(archivo);
 
         // Opcion B
-        double[] valores = encontrarMaximoMinimo(archivo);
-        System.out.println("Mínimo: " + valores[0]);
-        System.out.println("Maximo: " + valores[1]);
+        try {
+            double[] valores = encontrarMaximoMinimo(archivo);
+            if (valores == null) {
+                System.out.println("El archivo está vacío");
+            } else {
+                System.out.println("Mínimo: " + valores[0]);
+                System.out.println("Maximo: " + valores[1]);
+            }
+        } catch (IOException e) {
+            System.out.println("Error al leer el archivo");
+        }
     }
 
     private static double[] encontrarMaximoMinimo(String archivo) throws IOException {
-        double minimo = 0;
-        double maximo = 0;
+        double minimo = Double.MAX_VALUE;
+        double maximo = Double.MAX_VALUE;
         BufferedReader br = new BufferedReader(new FileReader(archivo));
 
         String linea;
@@ -38,7 +46,13 @@ public class Ejercicio1MaxMin {
                 }
             }
         }
-
-        return new double[] {minimo,maximo};
+        if (primerNumero) {
+            return null;
+        } else {
+            return new double[] {minimo,maximo};
+        }
+        /*return primerNumero ? null : new double[]{minimo, maximo};
+         Expresión condicional ternaria. Si la condición es true, se devuelve null, si es false, se devuelve un array con los valores minimo y maximo.
+         */
     }
 }
