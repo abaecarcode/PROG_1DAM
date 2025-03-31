@@ -28,7 +28,7 @@ public class Ejercicio1MaxMin {
 
     private static double[] encontrarMaximoMinimo(String archivo) throws IOException {
         double minimo = Double.MAX_VALUE;
-        double maximo = Double.MAX_VALUE;
+        double maximo = Double.MIN_VALUE;
         BufferedReader br = new BufferedReader(new FileReader(archivo));
 
         String linea;
